@@ -1,71 +1,143 @@
-# YouTube Video Downloader (Tkinter GUI)
+Here's your updated `README.md` in the **structured format** you prefer—complete with badges, screenshot placeholder, organized sections, and a GitHub-friendly layout:
 
-A Python-based YouTube video downloader with a graphical user interface (GUI) built using `Tkinter`. This application allows users to download YouTube videos in MP4 format by simply entering the video URL.
+---
 
-## Features
+## 📺 YouTube Video Downloader (Tkinter GUI)
 
-- User-friendly GUI for downloading YouTube videos.
-- Downloads videos in MP4 format with progressive streams.
-- Displays rules for ethical usage of the downloader.
-- Error handling for invalid URLs or connection issues.
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+[![Tkinter](https://img.shields.io/badge/gui-tkinter-red)](https://docs.python.org/3/library/tkinter.html)
+[![pytube](https://img.shields.io/badge/library-pytube-yellow)](https://pypi.org/project/pytube/)
+[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-## Requirements
+A simple and user-friendly Python application to download YouTube videos via a graphical interface built with **Tkinter**.
 
-- Python 3.x
-- Libraries:
-  - `pytube`
-  - `tkinter` (comes pre-installed with Python)
+---
 
-## Installation
+<!---### 📸 Screenshot
 
-1. Clone or download this repository.
-2. Install the required library:
+<img src="screenshot.png" alt="YouTube Downloader UI" width="500"/>
+
+> 📝 Replace `screenshot.png` with your actual screenshot file in the project directory.
+
+--->
+
+### 📁 Project Structure
+
+```
+youtube_downloader/
+├── main.py         # Entry point that launches the GUI
+├── gui.py          # GUI layout and user interactions
+└── downloader.py   # Download logic using pytube
+```
+
+---
+
+### 🚀 Features
+
+* ✅ Clean, minimal Tkinter GUI
+* ✅ Download MP4 videos using progressive streams
+* ✅ Simple input → paste URL and click Download
+* ✅ Error handling for invalid or broken links
+* ✅ Displays rules for ethical usage
+
+---
+
+### 🧑‍💻 Technologies Used
+
+* Python 3.x
+* [Tkinter](https://docs.python.org/3/library/tkinter.html) (standard GUI library)
+* [pytube](https://pypi.org/project/pytube/)
+
+---
+
+### 🛠️ Installation
+
+1. **Clone or download** this repository:
+
+   ```bash
+   git clone https://github.com/your-username/youtube-downloader.git
+   cd youtube-downloader
+   ```
+
+2. **Install dependencies**:
+
    ```bash
    pip install pytube
    ```
 
-## Usage
+---
 
-1. Run the script:
+### ▶️ Usage
+
+1. Run the app:
+
    ```bash
    python main.py
    ```
-   file to launch thr GUI application.
-2. Enter the YouTube video URL in the input field.
-3. Click the "Download" button to start downloading the video.
-4. The downloaded video will be saved in the current working directory.
 
-## Rules for Using the Downloader
+2. Paste a valid YouTube video URL (e.g., `https://www.youtube.com/watch?v=example`).
 
-1. Respect YouTube's Terms of Service.
-2. Do not download copyrighted content.
-3. Do not share or distribute downloaded videos.
-4. Use the downloader for personal, non-commercial purposes only.
+3. Click the **"Download"** button.
 
-## Example
+4. Your video will be saved in the **current working directory**.
 
-1. Launch the application.
-2. Enter a valid YouTube URL (e.g., `https://www.youtube.com/watch?v=example`).
-3. Click "Download" and wait for the success message.
+---
 
+### 📌 File Descriptions
 
-## Notes
+| File            | Purpose                                 |
+| --------------- | --------------------------------------- |
+| `main.py`       | Starts the GUI application              |
+| `gui.py`        | Contains UI elements and layout         |
+| `downloader.py` | Handles video download logic via pytube |
 
-- Ensure that the `pytube` library is installed before running the script.
+---
 
-## Troubleshooting
+### 🧩 Future Enhancements
 
-- If you encounter any errors, please check the console output for more information.
-- Make sure you have the latest version of pytube installed.
--  If you encounter issues with `pytube`, try upgrading it:
+* [ ] Add download resolution selector
+* [ ] Show download progress bar
+* [ ] Allow folder selection for saving videos
+* [ ] Add audio-only download option
+
+---
+
+### ⚠️ Ethical Use Guidelines
+
+Please follow these rules when using this tool:
+
+* ✅ Use only for personal, non-commercial purposes
+* 🚫 Do not download copyrighted content
+* 🚫 Do not re-upload or share downloaded videos
+* ✅ Respect YouTube’s [Terms of Service](https://www.youtube.com/t/terms)
+
+---
+
+### 🐞 Troubleshooting
+
+* Ensure `pytube` is installed:
+
+  ```bash
+  pip install pytube
+  ```
+
+* If `pytube` gives errors, upgrade it:
+
   ```bash
   pip install --upgrade pytube
   ```
 
-## License
+* Check the terminal output for error messages.
 
-This project is open source and available under the MIT License.
+---
 
-## Disclaimer
+### 📄 License
 
-This script is provided as-is, without warranty of any kind. Use it at your own risk. Please adhere to YouTube's terms of service and copyright laws.
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+### ⚠️ Disclaimer
+
+This script is provided **as-is**, with no warranties. Use at your own risk. Always comply with YouTube’s Terms of Service and applicable laws.
+

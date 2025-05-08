@@ -28,8 +28,9 @@ A Python-based YouTube video downloader with a graphical user interface (GUI) bu
 
 1. Run the script:
    ```bash
-   python TKINTER+YT-DOWNLOADER.py
+   python main.py
    ```
+   file to launch thr GUI application.
 2. Enter the YouTube video URL in the input field.
 3. Click the "Download" button to start downloading the video.
 4. The downloaded video will be saved in the current working directory.
@@ -47,10 +48,16 @@ A Python-based YouTube video downloader with a graphical user interface (GUI) bu
 2. Enter a valid YouTube URL (e.g., `https://www.youtube.com/watch?v=example`).
 3. Click "Download" and wait for the success message.
 
+
 ## Notes
 
 - Ensure that the `pytube` library is installed before running the script.
-- If you encounter issues with `pytube`, try upgrading it:
+
+## Troubleshooting
+
+- If you encounter any errors, please check the console output for more information.
+- Make sure you have the latest version of pytube installed.
+-  If you encounter issues with `pytube`, try upgrading it:
   ```bash
   pip install --upgrade pytube
   ```
